@@ -40,7 +40,7 @@ async def way_1_print(event):
 '''
 def way_2_print(event):
     global my_strings #gets my my_strings array
-    string2 = "ROACH"
+    string2 = "BALL"
     my_strings[1] = string2 #storing string 2 in array
     print('"',string2, '" loaded into my_strings array')
 
@@ -52,12 +52,21 @@ button_2_python.onclick = way_2_print #calls function 'way_2_print' when button 
 **************************************Your Function below (USE 2ND WAY)*************************************************
 
 '''
-def your_function_here(event):
-    #YOUR CODE HERE
-    #YOUR CODE HERE
-    #YOUR CODE HERE
-    #YOUR CODE HERE
-    pass #delete this 
+
+def reverse(word):
+    new_word = ""
+    word_len = len(word)
+    for i in range(word_len):
+        new_word[i] = word[word_len-i]
+
+def butt3(event):
+    global my_strings #gets my my_strings array
+    print(reverse(my_strings[0]), reverse(my_strings[1]))
+    
+
+#linking
+button_3_python = document.getElementById('my_button3_id') #gets button from html
+button_3_python.onclick = butt3 #calls function 'butt3' when button is clicked
    
 
 
