@@ -57,8 +57,7 @@ def reverse(word):
     new_word = ""
     word_len = len(word)
     for i in range(word_len):
-        new_word[i] = word[word_len-i]
-        print(new_word)
+        new_word = new_word + word[word_len-i]
 
 def butt3(event):
     global my_strings #gets my my_strings array
