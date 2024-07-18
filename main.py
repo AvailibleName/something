@@ -40,7 +40,7 @@ async def way_1_print(event):
 '''
 def way_2_print(event):
     global my_strings #gets my my_strings array
-    string2 = "BALL"
+    string2 = "ROACH"
     my_strings[1] = string2 #storing string 2 in array
     print('"',string2, '" loaded into my_strings array')
 
